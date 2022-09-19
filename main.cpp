@@ -27,5 +27,12 @@ int main() {
 	std::string resultE;
 	resultE = upper_triangle(5);
 	std::cout << "upper_triangle(5):\n" << resultE << "\n--------------------------\n";
+
+	//Test case for TASK F
+	std::string resultF1, resultF2;
+	resultF1 = trapezoid(12,5);
+	std::cout << "trapezoid(12,5):\n" << resultF1 << "\n--------------------------\n";
+	resultF2 = trapezoid(12,7);
+	std::cout << "trapezoid(12,7):\n" << resultF2 << "\n--------------------------\n";
 	return 0;
 }

@@ -83,3 +83,27 @@ std::string upper_triangle(int length) {
 	}
 	return output;
 }
+
+std::string trapezoid(int width, int height) {
+	std::string output;
+
+	if (height > width/2) {
+		output = "Impossible shape!\n";
+	}
+
+	else {
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				if (j < i || j > width - i - 1) {
+					output += " ";
+				}
+				else {
+					output += "*";
+				}
+			}
+			output += "\n";
+		}
+	}
+
+	return output;
+}
