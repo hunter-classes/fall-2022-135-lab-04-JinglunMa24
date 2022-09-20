@@ -38,7 +38,7 @@ int main() {
 	//Test case for TASK G
 	std::string resultG;
 	resultG = checker_board3x3(16,11);
-	std::cout << "checker_board(3x3):\n" << resultG << "\n--------------------------\n";
+	std::cout << "checker_board(16,11):\n" << resultG << "\n--------------------------\n";
 
 
 	return 0;

@@ -113,8 +113,9 @@ std::string checker_board3x3(int width, int height) {
 	std::string output;
 	bool space = false;
 
-	for (int i = 1; i < height; i++) {
+	for (int i = 1; i <= height; i++) {
 		for (int j = 1; j <= width; j++) {
+
 			if (!space) {
 				output += "*";
 			}
@@ -126,6 +127,12 @@ std::string checker_board3x3(int width, int height) {
 				space = !space;
 			}
 		}
+
+		if (i % 3 == 0) {
+				space = !space;
+		}
+
+		output += "\n";
 	}
 
 	return output;
