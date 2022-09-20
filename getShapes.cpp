@@ -107,3 +107,26 @@ std::string trapezoid(int width, int height) {
 
 	return output;
 }
+
+
+std::string checker_board3x3(int width, int height) {
+	std::string output;
+	bool space = false;
+
+	for (int i = 1; i < height; i++) {
+		for (int j = 1; j <= width; j++) {
+			if (!space) {
+				output += "*";
+			}
+			else {
+				output += " "; 
+			}
+
+			if ((j % 3 == 0 && j != width) || (width % 3 != 0 && j == width)) {
+				space = !space;
+			}
+		}
+	}
+
+	return output;
+}

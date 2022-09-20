@@ -34,5 +34,12 @@ int main() {
 	std::cout << "trapezoid(12,5):\n" << resultF1 << "\n--------------------------\n";
 	resultF2 = trapezoid(12,7);
 	std::cout << "trapezoid(12,7):\n" << resultF2 << "\n--------------------------\n";
+
+	//Test case for TASK G
+	std::string resultG;
+	resultG = checker_board3x3(16,11);
+	std::cout << "checker_board(3x3):\n" << resultG << "\n--------------------------\n";
+
+
 	return 0;
 }
